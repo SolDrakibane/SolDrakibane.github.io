@@ -70,7 +70,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let gl = null;
       let renderer = null;
       let scene = new Scene();
-      let lysimeter = new Gltf2Node({url: 'media/gltf/lysimeter/lysimeter.gltf'});
+      let lysimeter = new Gltf2Node({url: 'media/gltf/sunflower/sunflower.gltf'});
       // maakt gebruik van ThreeJS object manipulatie om de scale aan te passen van het 3D model.
        lysimeter.scale = [0.4, 0.4, 0.4];
       // Translation plaatst het object in de virtuele omgeving gebaseerd op XYZ locaties (in meters?)
@@ -196,7 +196,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
         anchor.context = {};
 
-        let flower = new Gltf2Node({url: ''});
+        let flower = new Gltf2Node({url: 'media/gltf/sunflower/sunflower.gltf'});
         scene.addNode(flower);
         anchor.context.sceneObject = flower;
         flower.anchor = anchor;
