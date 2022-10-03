@@ -116,7 +116,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
   let lysimeter_low = new Gltf2Node({url: 'media/gltf/lysimeter/lysimeter_lowpoly.gltf'});
   // lysimeter_low.scale = [0.2, 0.2, 0.2];
-  lysimeter_low.translation = [-0.5, -0.5, -0.5];
+  lysimeter_low.translation = [-1.5, -1, -1.5];
   scene.addNode(lysimeter_low);
 
   let reticle = new Gltf2Node({url: 'media/gltf/reticle/reticle.gltf'});
@@ -235,6 +235,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       // Create an anchor.
       reticleHitTestResult.createAnchor().then((anchor) => {
         addAnchoredObjectsToScene(anchor);
+        // lysimeter.translation = [2,-5,2]
       }, (error) => {
         console.error("Could not create anchor: " + error);
       });
