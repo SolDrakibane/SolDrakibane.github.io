@@ -77,6 +77,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             canhazImg.src = "media/textures/x-button.png";
         }
     </script>
+    <p style="font-family:'Courier New'; color:darkred; font-size: 18px; font-weight: bold;">Let op!
+        <br>Deze demo verbruikt MB/s aan internet data.</p>
     <details open style="padding-bottom: 10px;">
         <summary style="padding-top: 20px;">Lysimeter Demo</summary>
         <p>
@@ -122,14 +124,14 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     arObject.visible = false;
     scene.addNode(arObject);
 
-    let lysimeter = new Gltf2Node({url: 'media/gltf/lysimeter/lysimeter.gltf'});
+    let lysimeter = new Gltf2Node({url: 'media/gltf/lysimeter/lysimeter_lights3.gltf'});
     arObject.addNode(lysimeter);
 
     let reticle = new Gltf2Node({url: 'media/gltf/reticle/reticle.gltf'});
     reticle.visible = false;
     scene.addNode(reticle);
 
-    let lysimeterLow = new Gltf2Node({url: 'media/gltf/lysimeter/lysimeter_lowpoly.gltf'});
+    let lysimeterLow = new Gltf2Node({url: 'media/gltf/lysimeter/lysimeter_lights3.gltf'});
     lysimeterLow.translation = [-0.5,-1,-2];
     scene.addNode(lysimeterLow);
 
