@@ -197,6 +197,7 @@ const generateCSS = (options, fontSize=18)=> {
         min-width: ${fontSize * 9.6}px;
         display: inline-block;
         position: relative;
+        margin: 10px;
 
         cursor: pointer;
         transition: border 0.5s;
